@@ -1,0 +1,649 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(150, 150, 150);
+}
+
+.slide {
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Left side */
+.container .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 10px;
+}
+
+/* Left side Background Colour */
+#slide2 .container .left-side {
+  background-color: #c2a167;
+}
+
+#slide3 .container .left-side {
+  background-color: #5b9466;
+}
+
+#slide4 .container .left-side {
+  background-color: #e4bc71;
+}
+
+#slide5 .container .left-side {
+  background-color: #55ceec;
+}
+
+#slide6 .container .left-side {
+  background-color: #a05d28;
+}
+
+#slide7 .container .left-side {
+  background-color: #e1ccb0;
+}
+
+#slide8 .container .left-side {
+  background-color: #b27e45;
+}
+
+#slide9 .container .left-side {
+  background-color: #afadb7;
+}
+
+#slide10 .container .left-side {
+  background-color: #376c5a;
+}
+
+#slide11 .container .left-side {
+  background-color: #55ceec;
+}
+
+#slide12 .container .left-side {
+  background-color: #dfb197;
+}
+
+#slide13 .container .left-side {
+  background-color: #d8dbdb;
+}
+
+#slide14 {
+  background-color: #ffffff;
+}
+
+.left-side hr {
+  width: 90%;
+  border: 0;
+  height: 5px;
+  background-color: black;
+}
+
+.left-side-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  padding: 20px 0;
+}
+
+.left-side-content-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side-content-header-img-one {
+  width: 30%;
+  align-self: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.left-side-content-header-img-two {
+  width: 50%;
+  align-self: center;
+}
+
+.arabic-text {
+  width: 80%;
+  align-self: center;
+  padding: 20px 0;
+}
+
+.english-text {
+  font-family: "playfair display", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.quran-translation {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.left-side-content-header .mac-bottom {
+  margin-top: 10px;
+}
+
+/* Right side */
+.container .right-side {
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  background-position: center !important;
+}
+
+/* Right side Background image */
+#slide1 {
+  background: url("../assets/Initial-mosque.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#slide2 .container .right-side {
+  background: url("../assets/Iman/Ka'bah-Mecca.jpg");
+}
+
+#slide3 .container .right-side {
+  background: url("../assets/Obedience/Masjid-Al-Nabawi.png");
+}
+
+#slide4 .container .right-side {
+  background: url("../assets/Muraqabah/Dome-Of-The-Rock.jpg");
+}
+
+#slide5 .container .right-side {
+  background: url("../assets/Ikhlas/Qolsharif-Mosque.jpg");
+}
+
+#slide6 .container .right-side {
+  background: url("../assets/Mujahadatul-Nafs/Badshahi-Mosque.jpg");
+}
+
+#slide7 .container .right-side {
+  background: url("../assets/Sacrifice/Great-Mosque-Of-Xi'an.jpg");
+}
+
+#slide8 .container .right-side {
+  background: url("../assets/Izza/Khast-Imam.jpg");
+}
+
+#slide9 .container .right-side {
+  background: url("../assets/Justice/Sultan-Ahmed.jpg");
+}
+
+#slide10 .container .right-side {
+  background: url("../assets/Ummah/Hassan-II-Mosque.jpg");
+}
+
+#slide11 .container .right-side {
+  background: url("../assets/Rabbaniyah/Al-Mustafa-Mosque.jpg");
+}
+
+#slide12 .container .right-side {
+  background: url("../assets/The-Truth/Masjid-Wilayah-Pereskutan.jpg");
+}
+
+#slide13 .container .right-side {
+  background: url("../assets/Rahma/Baiturrahman-Grand-Mosque.jpg");
+}
+
+.right-side .location {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  margin: 0;
+  padding: 5px 10px;
+  font-weight: 600;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Intro & Footer Slides */
+.intro,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 1140px;
+}
+
+.intro-content,
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+  text-align: center;
+  padding: 10px 0 20px;
+}
+
+.footer-content > div {
+  width: 80%;
+}
+
+/* Calendar */
+.calendar {
+  background-color: white;
+  padding: 10px;
+}
+
+.calendar hr {
+  border: 0;
+  height: 2px;
+  background-color: black;
+}
+
+.year {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.month {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.calendar h3 {
+  margin-bottom: 10px;
+}
+
+.arabic-calendar {
+  color: #9eb0d7;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.day-header {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.day-header-container,
+.day-count {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.day-header-container > div,
+.day-count > div {
+  border: 1px solid #ddd;
+}
+
+.day-count > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.circle-serparator {
+  color: lightgray;
+}
+
+.red-circle-serparator {
+  color: red;
+}
+
+.asterisk-serparator::before {
+  content: "*";
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.note {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.note span {
+  font-weight: 500;
+}
+
+.important-day {
+  font-weight: bold;
+}
+
+.active-day-container {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 10px;
+}
+
+.active-day {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+}
+
+.active-day-date-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.active-day-date-arabic {
+  color: #9eb0d7;
+}
+
+.active-day-info {
+  margin-left: auto;
+}
+
+/* Navigation Bar */
+.month-navigation {
+  background-color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.month-navigation button {
+  background-color: #0a7a06;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.month-navigation button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.month-navigation button:active {
+  background-color: #3e8e41;
+  transform: scale(1);
+}
+
+.month-navigation button:focus {
+  outline: none; /
+}
+
+.month-year {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.month-group {
+  padding-bottom: 10px;
+}
+
+/* Navigation 12 months */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+.modal-content {
+  background-color: #232323;
+  border: 1px solid #888;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.modal-header h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.modal-header .close {
+  color: red;
+  cursor: pointer;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+}
+
+.legend > div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.legend #red {
+  color: red;
+}
+
+.legend #green {
+  color: green;
+}
+
+.legend p {
+  color: white;
+}
+
+.all-months {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.month-container {
+  margin: 10px 20px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.month-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Animation */
+.month-group {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  width: 100%;
+}
+
+/* Crossfade animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Tablet and Above */
+@media (min-width: 769px) {
+  .container {
+    max-width: 1140px;
+    flex-direction: row;
+  }
+
+  #slide3 .container,
+  #slide5 .container,
+  #slide7 .container,
+  #slide9 .container,
+  #slide11 .container,
+  #slide13 .container {
+    flex-direction: row-reverse;
+  }
+
+  .container .left-side {
+    width: 40%;
+    padding: 100px 20px 50px;
+  }
+
+  .left-side-content {
+    padding: 0;
+  }
+
+  .left-side-content-header-img-two {
+    width: 80%;
+    align-self: center;
+  }
+
+  .container .right-side {
+    width: 60%;
+    /* height: 100%; */
+    height: unset;
+    background-size: cover !important;
+  }
+
+  .right-side .location {
+    width: 40%;
+  }
+
+  #slide3 .location,
+  #slide5 .location,
+  #slide7 .location,
+  #slide9 .location,
+  #slide11 .location,
+  #slide13 .location {
+    left: 0;
+    right: unset;
+  }
+
+  /* Calendar */
+  .calendar {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  /* Modal */
+  .modal-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 2; /* Higher than other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Light black background */
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: fit-content;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: auto;
+  }
+  
+  .modal-content {
+    background-color: #232323;
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px;
+  }
+  
+  .modal-header h1 {
+    font-size: 4rem;
+  }
+
+  .all-months {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 1rem;
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1920px) {
+  .container, .calendar, .month-navigation, .intro, .footer {
+    max-width: 1400px;
+  }
+}
