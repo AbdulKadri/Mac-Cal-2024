@@ -13,7 +13,6 @@ html {
 }
 
 .slide {
-  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +124,35 @@ html {
 .left-side-content-header-img-two {
   width: 50%;
   align-self: center;
+}
+
+#monthGroupFebuary .left-side-content-header-img-one,
+#monthGroupJuly .left-side-content-header-img-one,
+#monthGroupAugust .left-side-content-header-img-one,
+#monthGroupSeptember .left-side-content-header-img-one,
+#monthGroupOctober .left-side-content-header-img-one,
+#monthGroupNovember .left-side-content-header-img-one,
+#monthGroupDecember .left-side-content-header-img-one {
+  width: 40%;
+}
+
+#monthGroupMay .left-side-content-header-img-one,
+#monthGroupJune .left-side-content-header-img-one,
+#monthGroupJanuary .left-side-content-header-img-two,
+#monthGroupApril .left-side-content-header-img-two,
+#monthGroupAugust .left-side-content-header-img-two,
+#monthGroupSeptember .left-side-content-header-img-two,
+#monthGroupDecember .left-side-content-header-img-two {
+  width: 70%;
+}
+
+#monthGroupFebuary .left-side-content-header-img-two,
+#monthGroupMay .left-side-content-header-img-two,
+#monthGroupMarch .left-side-content-header-img-two,
+#monthGroupJune .left-side-content-header-img-two,
+#monthGroupOctober .left-side-content-header-img-two,
+#monthGroupNovember .left-side-content-header-img-two {
+  width: 80%;
 }
 
 .arabic-text {
@@ -386,7 +414,7 @@ html {
   font-weight: 600;
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -614,9 +642,35 @@ html {
     padding: 0;
   }
 
-  .left-side-content-header-img-two {
+  #monthGroupJanuary .left-side-content-header-img-one,
+  #monthGroupMarch .left-side-content-header-img-one,
+  #monthGroupApril .left-side-content-header-img-one {
+    width: 40%;
+  }
+
+  #monthGroupJuly .left-side-content-header-img-one,
+  #monthGroupNovember .left-side-content-header-img-one {
+    width: 30%;
+  }
+
+  #monthGroupJanuary .left-side-content-header-img-two,
+  #monthGroupApril .left-side-content-header-img-two,
+  #monthGroupJune .left-side-content-header-img-one,
+  #monthGroupJune .left-side-content-header-img-two {
+    width: 60%;
+  }
+
+  #monthGroupJuly .left-side-content-header-img-two,
+  #monthGroupJune .left-side-content-header-img-one {
+    width: 50%;
+  }
+
+  /* .left-side-content-header-img-two {
     width: 80%;
-    align-self: center;
+  } */
+
+  #monthGroupJune .arabic-text {
+    width: 60%;
   }
 
   .container .right-side {
