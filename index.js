@@ -11,7 +11,7 @@ function initializeCalendar() {
 
 // Update the display for the month and year
 function updateMonthYearDisplay() {
-    document.getElementById('monthYear').textContent = monthNames[currentMonthIndex] + ' 2024';
+    document.getElementById('monthYear').innerHTML = monthNames[currentMonthIndex] + ' 2024 ' + '<i class="fa-solid fa-circle-chevron-down custom-beat"></i>';
 }
 
 // Change to a specific month
@@ -37,6 +37,9 @@ function changeMonth(newIndex) {
         // Reset the animation class after it completes
         setTimeout(() => newMonth.style.animationName = '', 500);
     }, 250); // This delay should be half of the animation-duration
+
+    // Update the URL hash
+    window.location.hash = monthNames[newIndex];
 }
 
 
@@ -75,6 +78,35 @@ document.querySelectorAll('.month-container, .month-preview').forEach(month => {
         closeModal();
     });
 });
+
+// Hide/Show Slides
+function toggleAllSlides() {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => {
+        if (slide.style.display === 'none') {
+            slide.style.display = 'block';
+        } else {
+            slide.style.display = 'none';
+        }
+    });
+}
+
+// Add event listener to the button or icon for all slides
+document.getElementById('toggleAllSlidesButton').addEventListener('click', toggleAllSlides);
+
+// Change URL
+function handleHashChange() {
+    const hash = window.location.hash.substring(1); // Remove the '#' symbol
+    const monthIndex = monthNames.indexOf(hash);
+    if (monthIndex !== -1) {
+        changeMonth(monthIndex);
+    }
+}
+
+// Call this function on window hash change and on page load
+window.addEventListener('hashchange', handleHashChange);
+window.onload = handleHashChange; // This will handle the case when the page is loaded with a hash
+
 
 // Initialize Calendar on Load
 initializeCalendar();

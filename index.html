@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;600;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Javascript -->
-    <script src="./index.js" defer></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e787344f18.js" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <!-- <div class="intro" id="slide1">
@@ -92,6 +92,10 @@
       <button id="nextMonth"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
+    <div class="toggleSlides-Container">
+      <button id="toggleAllSlidesButton">Calendar Focus</button>
+    </div>
+
     <!-- Iman -->
     <div class="month-group" id="monthGroupJanuary">
       <div class="slide" id="slide2">
@@ -152,139 +156,145 @@
           <div class="day-count">
             <div></div>
             <div>
-              1 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">19</span>
             </div>
             <div>
-              2 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">20</span>
             </div>
             <div>
-              3 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">21</span>
             </div>
             <div>
-              4 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">22</span>
             </div>
             <div>
-              5 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">5</span><span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">23</span>
             </div>
             <div>
-              6 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">24</span>
             </div>
             <div>
-              7 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">25</span>
             </div>
             <div>
-              8 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">26</span>
             </div>
             <div>
-              9 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">27</span>
             </div>
             <div>
-              10 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">28</span>
             </div>
             <div>
-              11 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">29</span>
             </div>
             <div>
-              12 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">30</span>
             </div>
             <div>
-              13 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">1</span>
             </div>
             <div>
-              14 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">2</span>
             </div>
             <div>
-              15 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">15</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">3</span>
             </div>
             <div>
-              16 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">16</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">4</span>
             </div>
             <div>
-              17 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">17</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">5</span>
             </div>
             <div>
-              18 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">18</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">6</span>
             </div>
             <div>
-              19 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">19</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">7</span>
             </div>
             <div>
-              20 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">8</span>
             </div>
             <div>
-              21 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">21</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">9</span>
             </div>
             <div>
-              22 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">10</span>
             </div>
             <div>
-              23 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">23</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">11</span>
             </div>
             <div>
-              24 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">24</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">12</span>
             </div>
             <div>
-              25 <span class="asterisk-serparator"></span>
+              <span class="english-calendar">25</span> <span class="asterisk-serparator"></span>
               <span class="arabic-calendar">13</span>
             </div>
             <div>
-              26 <span class="asterisk-serparator"></span>
+              <span class="english-calendar">26</span> <span class="asterisk-serparator"></span>
               <span class="arabic-calendar">14</span>
             </div>
             <div>
-              27 <span class="asterisk-serparator"></span>
+              <span class="english-calendar">27</span> <span class="asterisk-serparator"></span>
               <span class="arabic-calendar">15</span>
             </div>
             <div>
-              28 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">16</span>
             </div>
             <div>
-              29 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">17</span>
             </div>
             <div>
-              30 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">18</span>
             </div>
             <div>
-              31 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">31</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">19</span>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note desktop">
+              <span class="important-day">*</span> 3 White Days of the Month: "The
+              Messenger of Allah (peace be upon him) said, 'Observing Saum (fasting)
+              on three days of every month is equivalent to a full month’s fasting.'
+              [Al-Bukhari and Muslim]"
+            </div>
           </div>
-        </div>
-        <div class="note">
-          <span class="important-day">*</span> 3 White Days of the Month: "The
-          Messenger of Allah (peace be upon him) said, 'Observing Saum (fasting)
-          on three days of every month is equivalent to a full month’s fasting.'
-          [Al-Bukhari and Muslim]"
+          <div class="note">
+            <span class="important-day">*</span> 3 White Days of the Month: "The
+            Messenger of Allah (peace be upon him) said, 'Observing Saum (fasting)
+            on three days of every month is equivalent to a full month’s fasting.'
+            [Al-Bukhari and Muslim]"
+          </div>
         </div>
       </div>
     </div>
@@ -357,126 +367,127 @@
             <div></div>
             <div></div>
             <div>
-              1 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">20</span>
             </div>
             <div>
-              2 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">21</span>
             </div>
             <div>
-              3 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">22</span>
             </div>
             <div>
-              4 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">23</span>
             </div>
             <div>
-              5 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">24</span>
             </div>
             <div>
-              6 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">25</span>
             </div>
             <div>
-              7 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">26</span>
             </div>
             <div>
-              8 <span class="red-circle-serparator">&#9679;</span>
+              <span class="english-calendar">8</span> <span class="red-circle-serparator">&#9679;</span>
+              <p class="islamic-event">Isra & Miraj</p>
               <span class="arabic-calendar">27</span>
             </div>
             <div>
-              9 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">28</span>
             </div>
             <div>
-              10 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">29</span>
             </div>
             <div>
-              11 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">1</span>
             </div>
             <div>
-              12 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">2</span>
             </div>
             <div>
-              13 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">3</span>
             </div>
             <div>
-              14 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">4</span>
             </div>
             <div>
-              15 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">15</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">5</span>
             </div>
             <div>
-              16 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">16</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">6</span>
             </div>
             <div>
-              17 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">17</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">7</span>
             </div>
             <div>
-              18 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">18</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">8</span>
             </div>
             <div>
-              19 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">19</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">9</span>
             </div>
             <div>
-              20 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">10</span>
             </div>
             <div>
-              21 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">21</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">11</span>
             </div>
             <div>
-              22 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">12</span>
             </div>
             <div>
-              23 <span class="asterisk-serparator"></span>
+              <span class="english-calendar">23</span> <span class="asterisk-serparator"></span>
               <span class="arabic-calendar">13</span>
             </div>
             <div>
-              24 <span class="asterisk-serparator"></span>
+              <span class="english-calendar">24</span> <span class="asterisk-serparator"></span>
               <span class="arabic-calendar">14</span>
             </div>
             <div>
-              25 <span class="asterisk-serparator"></span>
+              <span class="english-calendar">25</span> <span class="asterisk-serparator"></span>
               <span class="arabic-calendar">15</span>
             </div>
             <div>
-              26 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">16</span>
             </div>
             <div>
-              27 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">17</span>
             </div>
             <div>
-              28 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">18</span>
             </div>
             <div>
-              29 <span class="circle-serparator">&#9679;</span>
+              <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
               <span class="arabic-calendar">19</span>
             </div>
             <div></div>
             <div></div>
           </div>
         </div>
-        <div class="note">
+        <div class="note note-top-right">
           'Aishah (may Allah be pleased with her) said: “The Messenger of Allah
           (peace be upon him) used to fast all of Sha'ban, he used to fast Sha'ban
           except a few days.” [Muslim]
@@ -493,7 +504,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- Muraqabah -->
     <div class="month-group" id="monthGroupMarch">
@@ -561,127 +571,128 @@
           <div></div>
           <div></div>
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            5 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            7 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div>
-            10 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            11 <span class="red-circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="red-circle-serparator">&#9679;</span>
+            <p class="islamic-event">Ramadan Begins</p>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            14 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            15 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">15</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            16 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">16</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            17 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">17</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            18 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">18</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            19 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">19</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            20 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            21 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">21</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            22 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            23 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">23</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            24 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">24</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            25 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">25</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            31 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3`</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div></div>
@@ -692,7 +703,7 @@
           <div></div>
         </div>
       </div>
-      <div class="note">
+      <div class="note note-top-right">
         The Prophet (peace be upon him) said, "Whoever observes fasts during the
         month of Ramadan out of sincere faith, and hoping to attain Allah's
         rewards, then all his past sins will be forgiven." [Bukhari]
@@ -775,141 +786,149 @@
         <div class="day-count">
           <div></div>
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            5 <span class="red-circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="red-circle-serparator">&#9679;</span>
+            <p class="islamic-event">Laylatul Qadr</p>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
           <div>
-            7 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">30</span>
           </div>
           <div>
-            10 <span class="red-circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="red-circle-serparator">&#9679;</span>
+            <p class="islamic-event">Eid-ul Fitr</p>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            11 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            14 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            15 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">15</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            16 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">16</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            17 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">17</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            18 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">18</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            19 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">19</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            20 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            21 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">21</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            22 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">22</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            23 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">23</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            24 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">24</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            25 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">25</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="note desktop">
+            The Prophet (peace be upon him) said, “Whoever fasts Ramadan and then
+            follows it with six [days] from Shawwal, it's as if they have fasted a
+            year.” [Muslim]
+          </div>
         </div>
-      </div>
-      <div class="note">
-        (لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ) <br />“The Night of
-        Decree is better than a thousand months” <br />(Quran, as translated:
-        97:3)
       </div>
       <div class="note">
         The Prophet (peace be upon him) said, “Whoever fasts Ramadan and then
         follows it with six [days] from Shawwal, it's as if they have fasted a
         year.” [Muslim]
       </div>
+      <div class="note note-top-right">
+        (لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ) <br />“The Night of
+        Decree is better than a thousand months” <br />(Quran, as translated:
+        97:3)
+      </div>
+
       <div class="active-day-container">
         <div class="active-day">
           <span class="red-circle-serparator">&#9679;</span>
@@ -1001,133 +1020,133 @@
           <div></div>
           <div></div>
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            5 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
           <div>
-            7 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            10 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            11 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            14 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            15 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">15</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            16 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">16</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            17 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">17</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            18 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">18</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            19 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">19</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            20 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            21 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">21</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            22 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">22</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            23 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">23</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            24 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">24</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            25 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">25</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            31 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">31</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div></div>
         </div>
       </div>
-      <div class="note">
+      <div class="note note-top-right">
         The Prophet (peace and blessings of Allah be upon him) said: “The year
         is of twelve months, out of which four months are sacred: Three are in
         succession Dhul-Qa' da, Dhul-Hijja and Muharram, and (the fourth is)
@@ -1206,136 +1225,143 @@
           <div></div>
           <div></div>
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
           <div>
-            5 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            7 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            10 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            11 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            14 <span class="red-circle-serparator">&#9679;</span>
+            <span class="english-calendar">14</span> <span class="red-circle-serparator">&#9679;</span>
+            <p class="islamic-event">Hajj Begins</p>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            15 <span class="red-circle-serparator">&#9679;</span>
+            <span class="english-calendar">15</span> <span class="red-circle-serparator">&#9679;</span>
+            <p class="islamic-event">Day of Arafah</p>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            16 <span class="red-circle-serparator">&#9679;</span>
+            <span class="english-calendar">16</span> <span class="red-circle-serparator">&#9679;</span>
+            <p class="islamic-event">Eid-al Adha</p>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            17 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">17</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            18 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">18</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            19 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">19</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            20 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">20</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            21 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">21</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            22 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            23 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">23</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            24 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">24</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            25 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">25</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="note desktop">
+            The Prophet (peace be upon him) said: “Fasting on the day of Arafah is
+            an expiation for the preceding year and the following year.” [Muslim]
+          </div>
         </div>
-      </div>
-      <div class="note">
-        The Prophet (peace be upon him) said: “Fasting on the day of Arafah is
-        an expiation for the preceding year and the following year.” [Muslim]
+        <div class="note">
+          The Prophet (peace be upon him) said: “Fasting on the day of Arafah is
+          an expiation for the preceding year and the following year.” [Muslim]
+        </div>
       </div>
       <div class="active-day-container">
         <div class="active-day">
@@ -1371,7 +1397,7 @@
   </div>
 
     <!-- Izza -->
-    <div class="month-group" id="monthGroupJulu">
+    <div class="month-group" id="monthGroupJuly">
     <div class="slide" id="slide8">
       <div class="container">
         <div class="left-side">
@@ -1431,123 +1457,125 @@
         <div class="day-count">
           <div></div>
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div>
-            5 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">30</span>
           </div>
           <div>
-            7 <span class="red-circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="red-circle-serparator">&#9679;</span>
+            <p class="islamic-event">Islamic New Year</p>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            10 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            11 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            14 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            15 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">15</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            16 <span class="red-circle-serparator">&#9679;</span>
+            <span class="english-calendar">16</span> <span class="red-circle-serparator">&#9679;</span>
+            <p class="islamic-event">Day of Ashura</p>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            17 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">17</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            18 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">18</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            19 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">19</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            20 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">20</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            21 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">21</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            22 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            23 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">23</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            24 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">24</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            25 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">25</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div></div>
@@ -1556,7 +1584,7 @@
           <div></div>
         </div>
       </div>
-      <div class="note">
+      <div class="note note-top-right">
         The Prophet (peace be upon him) was asked about observing As-Saum (the
         fast) on the 10th day of Muharram, and he replied, “It is an expiation
         for the sins of the preceding year.” [Muslim]
@@ -1651,127 +1679,127 @@
           <div></div>
           <div></div>
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            5 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            7 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            10 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            11 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            14 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            15 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">15</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            16 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">16</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            17 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">17</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            18 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">18</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            19 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">19</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            20 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            21 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">21</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            22 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            23 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">23</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            24 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">24</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            25 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">25</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            31 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">31</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
         </div>
@@ -1843,130 +1871,139 @@
         <!-- Days -->
         <div class="day-count">
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">30</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            5 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            7 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            10 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            11 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            14 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            15 <span class="red-circle-serparator">&#9679;</span>
+            <span class="english-calendar">15</span> <span class="red-circle-serparator">&#9679;</span>
+            <p class="islamic-event">Day the Prophet (SAW) was born</p>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            16 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">16</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            17 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">17</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            18 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">18</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            19 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">19</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            20 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            21 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">21</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            22 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            23 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">23</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            24 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">24</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div>
-            25 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">25</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="note desktop">
+            Rabi al-Awwal signifies 3 important dates in history:
+            <br />
+            1. The birth of the Prophet Muhammad (peace be upon him). <br />
+            2. The Hijrah of the Prophet (peace be upon him), from Makkah to
+            Madinah. <br />
+            3. The death of the Prophet (peace be upon him) - at 63 years old.
+          </div>
         </div>
         <div class="note">
           Rabi al-Awwal signifies 3 important dates in history:
@@ -2059,127 +2096,127 @@
           <div></div>
           <div></div>
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">30</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            5 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            7 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            10 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            11 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            14 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            15 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">15</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            16 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">16</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            17 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">17</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            18 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">18</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            19 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">19</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            20 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            21 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">21</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            22 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            23 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">23</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            24 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">24</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div>
-            25 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">25</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
           <div>
-            31 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">31</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div></div>
@@ -2259,123 +2296,123 @@
           <div></div>
           <div></div>
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">30</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            5 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            7 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            10 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            11 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            14 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">14</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            15 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">15</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            16 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">16</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            17 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">17</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            18 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">18</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            19 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">19</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            20 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            21 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">21</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            22 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            23 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">23</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div>
-            24 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">24</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            25 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">25</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
         </div>
@@ -2448,133 +2485,137 @@
         <!-- Days -->
         <div class="day-count">
           <div>
-            1 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">1</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            2 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">2</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">1</span>
           </div>
           <div>
-            3 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">3</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">2</span>
           </div>
           <div>
-            4 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">4</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">3</span>
           </div>
           <div>
-            5 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">5</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">4</span>
           </div>
           <div>
-            6 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">6</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">5</span>
           </div>
           <div>
-            7 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">7</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">6</span>
           </div>
           <div>
-            8 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">8</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">7</span>
           </div>
           <div>
-            9 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">9</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">8</span>
           </div>
           <div>
-            10 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">10</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">9</span>
           </div>
           <div>
-            11 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">11</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">10</span>
           </div>
           <div>
-            12 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">12</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">11</span>
           </div>
           <div>
-            13 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">13</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">12</span>
           </div>
           <div>
-            14 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">14</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">13</span>
           </div>
           <div>
-            15 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">15</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">14</span>
           </div>
           <div>
-            16 <span class="asterisk-serparator"></span>
+            <span class="english-calendar">16</span> <span class="asterisk-serparator"></span>
             <span class="arabic-calendar">15</span>
           </div>
           <div>
-            17 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">17</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">16</span>
           </div>
           <div>
-            18 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">18</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">17</span>
           </div>
           <div>
-            19 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">19</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">18</span>
           </div>
           <div>
-            20 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">20</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">19</span>
           </div>
           <div>
-            21 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">21</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">20</span>
           </div>
           <div>
-            22 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">22</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">21</span>
           </div>
           <div>
-            23 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">23</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">22</span>
           </div>
           <div>
-            24 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">24</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">23</span>
           </div>
           <div>
-            25 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">25</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">24</span>
           </div>
           <div>
-            26 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">26</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">25</span>
           </div>
           <div>
-            27 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">27</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">26</span>
           </div>
           <div>
-            28 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">28</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">27</span>
           </div>
           <div>
-            29 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">29</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">28</span>
           </div>
           <div>
-            30 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">30</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">29</span>
           </div>
           <div>
-            31 <span class="circle-serparator">&#9679;</span>
+            <span class="english-calendar">31</span> <span class="circle-serparator">&#9679;</span>
             <span class="arabic-calendar">30</span>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="final-divs"></div>
+          <div class="note desktop">
+            The Prophet (peace be upon him) said: “Take advantage of five matters before five other matters: your youth, before you become old; your health, before you fall sick; your wealth, before you become poor; your free time before you become busy; and your life, before your death.” [Bukhari]
+            </span>
+          </div>
         </div>
         <div class="note">
             The Prophet (peace be upon him) said: “Take advantage of five matters before five other matters: your youth, before you become old; your health, before you fall sick; your wealth, before you become poor; your free time before you become busy; and your life, before your death.” [Bukhari]
