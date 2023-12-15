@@ -316,6 +316,10 @@ html {
   font-weight: 600;
 }
 
+.arabic-date {
+  font-family: "Amiri", serif !important;
+}
+
 .day-header {
   background-color: #f2f2f2;
   font-weight: bold;
@@ -714,6 +718,18 @@ html {
     margin: 0 auto;
   }
 
+  .year {
+    font-size: 1.5rem;
+  }
+
+  .month {
+    font-size: 2rem;
+  }
+
+  .arabic-date {
+    font-size: 1.5rem;
+  }
+
   .day-count {
     position: relative;
   }
@@ -811,6 +827,10 @@ html {
     max-width: 700px;
   }
 
+  #monthGroupMay > .calendar > .note-top-right {
+    max-width: 600px;
+  }
+
   /* Modal */
   .modal-container {
     display: none;
@@ -878,14 +898,10 @@ html {
     height: 200px;
   }
 
-  .calendar > .note-top-right {
-    max-width: 400px !important;
-  }
-
-  #monthGroupMay .note-top-right,
-  #monthGroupJuly .note-top-right {
+  .note-top-right {
     position: unset !important;
     margin: 0 auto;
+    width: 100% !important;
   }
 }
 
