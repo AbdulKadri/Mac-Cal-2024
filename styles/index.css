@@ -680,7 +680,7 @@ html {
   }
 
   .right-side .location {
-    width: 40%;
+    width: fit-content;
   }
 
   #slide3 .location,
