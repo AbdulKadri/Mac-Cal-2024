@@ -77,23 +77,19 @@ html {
 }
 
 #slide10 .container .left-side {
-  background-color: #376c5a;
+  background-color: #eea401;
 }
 
 #slide11 .container .left-side {
-  background-color: #55ceec;
+  background-color: #d4c6aa;
 }
 
 #slide12 .container .left-side {
-  background-color: #dfb197;
+  background-color: #55ceec;
 }
 
 #slide13 .container .left-side {
-  background-color: #d8dbdb;
-}
-
-#slide14 {
-  background-color: #ffffff;
+  background-color: #376c5a;
 }
 
 .left-side hr {
@@ -129,7 +125,7 @@ html {
   align-self: center;
 }
 
-#monthGroupFebuary .left-side-content-header-img-one,
+#monthGroupFebruary .left-side-content-header-img-one,
 #monthGroupJuly .left-side-content-header-img-one,
 #monthGroupAugust .left-side-content-header-img-one,
 #monthGroupSeptember .left-side-content-header-img-one,
@@ -149,7 +145,7 @@ html {
   width: 70%;
 }
 
-#monthGroupFebuary .left-side-content-header-img-two,
+#monthGroupFebruary .left-side-content-header-img-two,
 #monthGroupMay .left-side-content-header-img-two,
 #monthGroupMarch .left-side-content-header-img-two,
 #monthGroupJune .left-side-content-header-img-two,
@@ -192,12 +188,12 @@ html {
 }
 
 /* Right side Background image */
-#slide1 {
+/* #slide1 {
   background: url("../assets/Initial-mosque.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-}
+} */
 
 #slide2 .container .right-side {
   background: url("../assets/Iman/Ka'bah-Mecca.jpg");
@@ -232,19 +228,19 @@ html {
 }
 
 #slide10 .container .right-side {
-  background: url("../assets/Ummah/Hassan-II-Mosque.jpg");
+  background: url("../assets/The-Truth/Malacca-Straits-Mosque.jpg");
 }
 
 #slide11 .container .right-side {
-  background: url("../assets/Rabbaniyah/Al-Mustafa-Mosque.jpg");
+  background: url("../assets/Rahma/Ali-Jim'ale-Mosque.jpg");
 }
 
 #slide12 .container .right-side {
-  background: url("../assets/The-Truth/Masjid-Wilayah-Pereskutan.jpg");
+  background: url("../assets/Rabbaniyah/Al-Mustafa-Mosque.jpg");
 }
 
 #slide13 .container .right-side {
-  background: url("../assets/Rahma/Baiturrahman-Grand-Mosque.jpg");
+  background: url("../assets/Ummah/Hassan-II-Mosque.jpg");
 }
 
 .right-side .location {
@@ -260,9 +256,8 @@ html {
   right: 0;
 }
 
-/* Intro & Footer Slides */
-.intro,
-.footer {
+/* Intro */
+.intro {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,21 +265,136 @@ html {
   margin: 0 auto;
   margin-top: 10px;
   max-width: 1140px;
+  background-color: white !important;
+  color: #252b3b;
 }
 
-.intro-content,
-.footer-content {
+.intro-container {
+  width: 100%;
+  max-width: 1140px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.intro-background > img {
+  display: none;
+}
+
+.intro-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  min-height: 50vh;
+  gap: 1rem;
   text-align: center;
-  padding: 10px 0 20px;
+  padding: 0;
+  z-index: 1;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.footer-content > div {
-  width: 80%;
+.Intro-mac-logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.Intro-Year {
+  font-size: 5rem;
+  margin-top: -20px;
+}
+
+.Intro-Islamic-Title {
+  font-size: 2rem;
+  width: 100%;
+  margin-top: -40px;
+}
+
+.Intro-English-Title {
+  font-size: 3rem;
+  background-color: #fdc361;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+.Calendar-Btn {
+  background: linear-gradient(to right, #0a7a06, #45a049);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.Calendar-Btn:hover {
+  transform: scale(1.05);
+}
+
+.Intro-Text {
+  margin: 20px 0 10px;
+  font-size: 1.5rem;
+}
+
+.important-dates-container {
+  background: url(../assets/Muraqabah/Dome-Of-The-Rock.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  max-width: 1140px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.important-dates-content {
+  background-color: rgba(196, 209, 220, 0.7);
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.important-dates-content h1 {
+  font-size: 2rem;
+}
+
+.important-dates-content > p {
+  border: 3px solid black;
+  border-radius: 50px;
+  width: 50%;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.important-dates {
+  width: 100%;
+}
+
+.important-dates ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.important-dates ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 20px;
 }
 
 /* Calendar */
@@ -319,8 +429,22 @@ html {
   font-weight: 600;
 }
 
-.arabic-calendar-month-name {
-  display: none;
+.Jumada-Al-Thani,
+.Shaban,
+.Shawwal,
+.Dhul-Hijjah,
+.Safar,
+.Rabi-Al-Thani {
+  color: #f1ab19 !important;
+}
+
+.Rajab,
+.Ramadan,
+.Dhul-Qadah,
+.Muharram,
+.Rabi-Al-Awwal,
+.Jumada-Al-Awwal {
+  color: #567ed4;
 }
 
 .arabic-date {
@@ -363,6 +487,16 @@ html {
   color: red;
 }
 
+.purple-circle-serparator,
+.purple-circle-serparator-note,
+.day-count .purple-circle-serparator-desktop {
+  color: rebeccapurple;
+}
+
+.day-count .purple-circle-serparator-desktop {
+  display: none;
+}
+
 .asterisk-serparator::before {
   content: "*";
   vertical-align: middle;
@@ -376,8 +510,21 @@ html {
 }
 
 .day-count > .desktop,
-.day-count > div > .islamic-event {
+.day-count > div > .islamic-event,
+.day-count .note-top-left {
   display: none;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
 }
 
 .note span {
@@ -390,7 +537,7 @@ html {
 
 .active-day-container {
   padding: 10px;
-  margin: 10px;
+  margin: 20px 10px 10px;
   background: linear-gradient(to right, #0a7a06, #45a049);
   color: white;
   border-radius: 10px;
@@ -446,20 +593,6 @@ html {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.month-navigation button:hover {
-  background-color: lightgray;
-  transform: scale(1.1);
-}
-
-.month-navigation button:active {
-  background-color: lightgray;
-  transform: scale(1);
-}
-
-.month-navigation button:focus {
-  outline: none;
-}
-
 .month-year {
   margin: 0 20px;
   cursor: pointer;
@@ -480,6 +613,7 @@ html {
   background: linear-gradient(to right, #0a7a06, #45a049);
   max-width: 1140px;
   margin: 0 auto;
+  padding-top: 5px;
   padding-bottom: 5px;
   position: relative;
   z-index: 1;
@@ -647,8 +781,122 @@ html {
   animation: custom-beat-animation 0.5s ease-in-out 2;
 }
 
+/* Footer */
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.footer-header {
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-grow: 1;
+}
+
+.footer-btn:hover {
+  transform: scale(1.05);
+}
+
+.footer-copyright {
+  margin-top: 50px;
+}
+
+.footer-content a {
+  background: linear-gradient(to right, #0a7a06, #45a049);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
 /* Tablet and Above */
 @media (min-width: 769px) {
+  /* Intro */
+
+  .intro-background {
+    width: 70%;
+  }
+
+  .intro-background > img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 65%;
+    height: 100%;
+  }
+
+  .intro-content {
+    padding: 10px 20px 20px 0;
+    width: 30%;
+  }
+
+  .Calendar-Btn {
+    padding: 10px 20px;
+    margin-bottom: 0;
+  }
+
+  .Intro-Text {
+    font-size: 1.5rem;
+  }
+
+  .important-dates-content h1 {
+    font-size: 4rem;
+  }
+
+  .important-dates-content > p {
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 30%;
+    font-size: 2rem;
+  }
+
+  .important-dates ul li {
+    flex-direction: row;
+    margin-top: 5px;
+    gap: 1rem;
+  }
+
+  .important-dates ul li h3 {
+    text-align: right;
+    font-size: 2rem;
+    width: 50%;
+  }
+
+  .important-dates ul li p {
+    text-align: left;
+    font-size: 1.3rem;
+    width: 50%;
+  }
+
+  /* Slides */
+  .month-navigation button:hover {
+    background-color: lightgray;
+    transform: scale(1.1);
+  }
+
   .container {
     max-width: 1140px;
     flex-direction: row;
@@ -760,37 +1008,59 @@ html {
     display: none;
   }
 
+  .day-count .purple-circle-serparator-desktop,
+  .day-count .purple-circle-serparator {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    display: inline-block;
+    font-size: 2rem;
+  }
+
   .day-count > .desktop,
   .day-count > div > .islamic-event,
-  .note-top-right {
+  .note-top-right,
+  .note-top-left {
     display: block;
   }
 
-  .day-count > div > .islamic-event {
+  /* .day-count > div > .islamic-event {
     color: #567ed4;
-  }
+  } */
 
   #monthGroupJanuary .desktop {
     grid-column: span 3;
   }
 
+  #monthGroupFebruary .note-top-left,
   #monthGroupApril .desktop,
+  #monthGroupJuly .desktop,
+  #monthGroupAugust .note-top-left,
   #monthGroupDecember .desktop {
     grid-column: span 4;
   }
 
-  #monthGroupSeptember .desktop {
+  #monthGroupMarch .note-top-left,
+  #monthGroupSeptember .desktop,
+  #monthGroupNovember .note-top-left {
     grid-column: span 5;
   }
 
+  #monthGroupMarch .desktop,
   #monthGroupJune .desktop {
     grid-column: span 6;
   }
 
   #monthGroupJanuary .desktop,
+  #monthGroupFebruary .note-top-left,
+  #monthGroupMarch .desktop,
+  #monthGroupMarch .note-top-left,
   #monthGroupApril .desktop,
   #monthGroupJune .desktop,
+  #monthGroupJuly .desktop,
+  #monthGroupAugust .note-top-left,
   #monthGroupSeptember .desktop,
+  #monthGroupNovember .note-top-left,
   #monthGroupDecember .desktop {
     display: flex;
     justify-content: center;
@@ -816,21 +1086,28 @@ html {
     right: 0;
     padding: 0 10px 10px 0;
     font-size: 1.2rem;
+    text-align: right;
   }
 
-  #monthGroupFebuary > .calendar,
+  #monthGroupFebruary > .calendar,
   #monthGroupMarch > .calendar,
   #monthGroupApril > .calendar,
   #monthGroupMay > .calendar,
-  #monthGroupJuly > .calendar {
+  #monthGroupJuly > .calendar,
+  #monthGroupAugust > .calendar,
+  #monthGroupOctober > .calendar,
+  #monthGroupNovember > .calendar {
     position: relative;
   }
 
-  #monthGroupFebuary > .calendar > .note-top-right,
+  #monthGroupFebruary > .calendar > .note-top-right,
   #monthGroupMarch > .calendar > .note-top-right,
   #monthGroupApril > .calendar > .note-top-right,
   #monthGroupMay > .calendar > .note-top-right,
-  #monthGroupJuly > .calendar > .note-top-right {
+  #monthGroupJuly > .calendar > .note-top-right,
+  #monthGroupAugust > .calendar > .note-top-right,
+  #monthGroupOctober > .calendar > .note-top-right,
+  #monthGroupNovember > .calendar > .note-top-right {
     display: block;
     position: absolute;
     top: 0;
@@ -896,6 +1173,15 @@ html {
     padding: 20px;
     gap: 1rem;
   }
+
+  /* Footer */
+  .footer {
+    max-width: 1140px;
+  }
+
+  .footer-content > div > p {
+    max-width: 600px;
+  }
 }
 
 /* Tablet */
@@ -923,8 +1209,15 @@ html {
   .calendar,
   .month-navigation,
   .intro,
+  .important-dates-container,
   .footer,
   .toggleSlides-Container {
     max-width: 1400px;
+  }
+
+  .intro-container {
+    min-height: unset !important;
+    min-height: 50vh !important;
+    max-width: unset !important;
   }
 }

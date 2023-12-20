@@ -46,11 +46,21 @@ function changeMonth(newIndex) {
 
 // Event Listeners for Navigation
 document.getElementById('prevMonth').addEventListener('click', () => {
-    if (currentMonthIndex > 0) changeMonth(currentMonthIndex - 1);
+    if (currentMonthIndex > 0) {
+        changeMonth(currentMonthIndex - 1);
+    } else {
+        // Redirect to index.html if we are at January and the user clicks to go to the previous month
+        window.location.href = 'index.html';
+    }
 });
 
 document.getElementById('nextMonth').addEventListener('click', () => {
-    if (currentMonthIndex < monthGroups.length - 1) changeMonth(currentMonthIndex + 1);
+    if (currentMonthIndex < monthGroups.length - 1) {
+        changeMonth(currentMonthIndex + 1);
+    } else {
+        // Redirect to outro.html if we are at December and the user clicks to go to the next month
+        window.location.href = 'outro.html';
+    }
 });
 
 // Modal Open and Close Handlers

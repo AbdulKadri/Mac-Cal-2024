@@ -1,0 +1,3259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAC Calendar 2024</title>
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;600;800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Amiri Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;600;800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e787344f18.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Javascript -->
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <!-- Modal for Year View -->
+    <div class="modal-container">
+      <div id="allMonthsModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close"><i class="fa-solid fa-x"></i></span>
+            <h1>2024</h1>
+            <div class="legend">
+              <div>
+                <i class="fa-solid fa-circle" id="red"></i>
+                <p>Special</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-circle" id="green"></i>
+                <p>Fasting</p>
+              </div>
+            </div>
+          </div>
+          <p>(Select a month to view detials)</p>
+          <div class="all-months">
+            <div class="month-container" data-month="0">
+              <img src="./assets/Months/January.png" alt="Jan" />
+            </div>
+            <div class="month-container" data-month="1">
+              <img src="./assets/Months/February.png" alt="Feb" />
+            </div>
+            <div class="month-container" data-month="2">
+              <img src="./assets/Months/March.png" alt="Mar" />
+            </div>
+            <div class="month-container" data-month="3">
+              <img src="./assets/Months/April.png" alt="Apr" />
+            </div>
+            <div class="month-container" data-month="4">
+              <img src="./assets/Months/May.png" alt="May" />
+            </div>
+            <div class="month-container" data-month="5">
+              <img src="./assets/Months/June.png" alt="Jun" />
+            </div>
+            <div class="month-container" data-month="6">
+              <img src="./assets/Months/July.png" alt="Jul" />
+            </div>
+            <div class="month-container" data-month="7">
+              <img src="./assets/Months/August.png" alt="Aug" />
+            </div>
+            <div class="month-container" data-month="8">
+              <img src="./assets/Months/September.png" alt="Sep" />
+            </div>
+            <div class="month-container" data-month="9">
+              <img src="./assets/Months/October.png" alt="Oct" />
+            </div>
+            <div class="month-container" data-month="10">
+              <img src="./assets/Months/November.png" alt="Nov" />
+            </div>
+            <div class="month-container" data-month="11">
+              <img src="./assets/Months/December.png" alt="Dec" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="month-navigation">
+      <button id="prevMonth"><i class="fa-solid fa-chevron-left"></i></button>
+      <div id="monthYear" class="month-year"></div>
+      <button id="nextMonth"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <div class="toggleSlides-Container">
+      <button id="toggleAllSlidesButton">Calendar Focus</button>
+    </div>
+
+    <!-- Iman -->
+    <div class="month-group" id="monthGroupJanuary">
+      <div class="slide" id="slide2">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Iman/Iman-arabic-title.png"
+                  alt="Iman"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Iman/Iman-english-title.png"
+                  alt="Iman"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Iman/Iman-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  Your God is ˹only˺ One God. There is no god ˹worthy of
+                  worship˺ except Him—the Most Compassionate, Most Merciful.
+                </p>
+                <p class="quran-translation">(Quran, as translated: 2:163)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Ka'bah, Mecca</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">January</h2>
+        <h3 class="arabic-calendar">
+          <span class="Jumada-Al-Thani"
+            >1445 Jumada Al-Thani
+            <span class="arabic-date">(جُمَادَىٰ ٱلثَّانِيَة)</span></span
+          >
+          -
+          <span class="Rajab"
+            >1445 Rajab <span class="arabic-date">(رَجَب)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div></div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span
+              ><span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">30</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Rajab">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Rajab">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Rajab">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">31</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">19</span>
+            </div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note desktop">
+              <span class="important-day">*</span> 3 White Days of the Month:
+              "The Messenger of Allah (peace be upon him) said, 'Observing Saum
+              (fasting) on three days of every month is equivalent to a full
+              month’s fasting.' [Al-Bukhari and Muslim]"
+            </div>
+          </div>
+          <div class="note">
+            <br />
+            <span class="important-day">*</span> 3 White Days of the Month: "The
+            Messenger of Allah (peace be upon him) said, 'Observing Saum
+            (fasting) on three days of every month is equivalent to a full
+            month’s fasting.' [Al-Bukhari and Muslim]"
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Obedience -->
+    <div class="month-group" id="monthGroupFebruary">
+      <div class="slide" id="slide3">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Obedience/Obedience-arabic-title.png"
+                  alt="Obedience"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Obedience/Obedience-english-title.png"
+                  alt="Obedience"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Obedience/Obedience-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  O believers! Obey Allah and His Messenger and do not turn away
+                  from him while you hear ˹his call˺.
+                </p>
+                <p class="quran-translation">(Quran, as translated: 8:20)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Masjid-Al-Nabawi, Madinah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">February</h2>
+        <h3 class="arabic-calendar">
+          <span class="Rajab"
+            >1445 Rajab <span class="arabic-date">(رَجَب)</span></span
+          >
+          -
+          <span class="Shaban"
+            >1445 Sha'ban <span class="arabic-date">(شَعْبَان)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note note-top-left">
+              'Aishah (may Allah be pleased with her) said: “The Messenger of
+              Allah (peace be upon him) used to fast all of Sha'ban, he used to
+              fast Sha'ban except a few days.” [Muslim]
+            </div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="red-circle-serparator">&#9679;</span>
+              <p class="islamic-event">Isra & Miraj</p>
+              <span class="arabic-calendar Rajab">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rajab">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Shaban">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Shaban">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Shaban">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">19</span>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="active-day-container">
+          <div class="active-day">
+            <span class="red-circle-serparator">&#9679;</span>
+            <div class="active-day-date-container">
+              <p class="active-day-date-english">February 8th, 2024</p>
+              <p class="active-day-date-arabic">Rajab 27th, 1445</p>
+            </div>
+            <p class="active-day-info">Isra & Miraj</p>
+          </div>
+        </div>
+        <div class="note">
+          'Aishah (may Allah be pleased with her) said: “The Messenger of Allah
+          (peace be upon him) used to fast all of Sha'ban, he used to fast
+          Sha'ban except a few days.” [Muslim]
+        </div>
+      </div>
+    </div>
+
+    <!-- Muraqabah -->
+    <div class="month-group" id="monthGroupMarch">
+      <div class="slide" id="slide4">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Muraqabah/Muraqabah-arabic-title.png"
+                  alt="Muraqabah"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Muraqabah/Muraqabah-english-title.png"
+                  alt="Muraqabah"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Muraqabah/Muraqabah-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">God is Watchful over all things.</p>
+                <p class="quran-translation">(Quran, as translated: 33:52)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Dome of the Rock, Palestine</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">March</h2>
+        <h3 class="arabic-calendar">
+          <span class="Shaban"
+            >1445 Sha'ban <span class="arabic-date">(شَعْبَان)</span></span
+          >
+          -
+          <span class="Ramadan"
+            >1445 Ramadan <span class="arabic-date">(رَمَضَان)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note note-top-left">
+              The Prophet (peace be upon him) said, "Whoever observes fasts
+              during the month of Ramadan out of sincere faith, and hoping to
+              attain Allah's rewards, then all his past sins will be forgiven."
+              [Bukhari]
+            </div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shaban">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="red-circle-serparator">&#9679;</span>
+              <p class="islamic-event">Ramadan begins</p>
+              <span class="arabic-calendar Ramadan">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Ramadan">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Ramadan">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Ramadan">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="red-circle-serparator">&#9679;</span>
+              <p class="islamic-event">Last 10 Days Begins</p>
+              <span class="arabic-calendar Ramadan">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">31</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">21</span>
+            </div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note desktop">
+              `A'ishah (May Allah be pleased with her) reported: When the last
+              ten nights (of Ramadan) would begin, the Messenger of Allah (peace
+              be upon him)would keep awake at night (for prayer and devotion),
+              awaken his family and prepare himself to bemore diligent in
+              worship. [Al-Bukhari and Muslim]
+            </div>
+          </div>
+        </div>
+        <div class="active-day-container">
+          <div class="active-day">
+            <span class="red-circle-serparator">&#9679;</span>
+            <div class="active-day-date-container">
+              <p class="active-day-date-english">March 11th, 2024</p>
+              <p class="active-day-date-arabic">Ramadan 1st, 1445</p>
+            </div>
+            <p class="active-day-info">Ramadan begins</p>
+          </div>
+        </div>
+        <div class="active-day-container">
+          <div class="active-day">
+            <span class="red-circle-serparator">&#9679;</span>
+            <div class="active-day-date-container">
+              <p class="active-day-date-english">March 29th, 2024</p>
+              <p class="active-day-date-arabic">Ramadan 20th, 1445</p>
+            </div>
+            <p class="active-day-info">Last 10 Days</p>
+          </div>
+        </div>
+        <div class="note">
+          `A'ishah (May Allah be pleased with her) reported: When the last ten
+          nights (of Ramadan) would begin, the Messenger of Allah (peace be upon
+          him)would keep awake at night (for prayer and devotion), awaken his
+          family and prepare himself to bemore diligent in worship. [Al-Bukhari
+          and Muslim]
+        </div>
+        <div class="note">
+          The Prophet (peace be upon him) said, "Whoever observes fasts during
+          the month of Ramadan out of sincere faith, and hoping to attain
+          Allah's rewards, then all his past sins will be forgiven." [Bukhari]
+        </div>
+      </div>
+    </div>
+
+    <!-- Ikhlas -->
+    <div class="month-group" id="monthGroupApril">
+      <div class="slide" id="slide5">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Ikhlas/Ikhlas-arabio-title.png"
+                  alt="Ikhlas"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Ikhlas/Ikhlas-english-title.png"
+                  alt="Ikhlas"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Ikhlas/Ikhlas-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  Say, “Surely my prayer, my worship, my life, and my death are
+                  all for Allah—Lord of all worlds."
+                </p>
+                <p class="quran-translation">(Quran, as translated: 6:162)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>QolSharif Mosque, Russia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">April</h2>
+        <h3 class="arabic-calendar">
+          <span class="Ramadan"
+            >1445 Ramadan <span class="arabic-date">(رَمَضَان)</span></span
+          >
+          -
+          <span class="Shawwal"
+            >1445 Shawwal <span class="arabic-date">(شَوَّال)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div></div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="red-circle-serparator">&#9679;</span>
+              <p class="islamic-event">Laylatul Qadr</p>
+              <span class="arabic-calendar Ramadan">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Ramadan">30</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="red-circle-serparator">&#9679; </span>
+              <p class="islamic-event">Eid-ul Fitr</p>
+              <span class="arabic-calendar Shawwal"> 1 </span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="purple-circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="purple-circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="purple-circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="purple-circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="purple-circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="purple-circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Shawwal">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Shawwal">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Shawwal">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">21</span>
+            </div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note desktop">
+              <span class="purple-circle-serparator-note">&#9679;</span> The
+              Prophet (peace be upon him) said, “Whoever fasts Ramadan and then
+              follows it with six [days] from Shawwal, it's as if they have
+              fasted a year.” [Muslim]
+            </div>
+          </div>
+        </div>
+        <div class="active-day-container">
+          <div class="active-day">
+            <span class="red-circle-serparator">&#9679;</span>
+            <div class="active-day-date-container">
+              <p class="active-day-date-english">April 5th, 2024</p>
+              <p class="active-day-date-arabic">Ramadan 26th, 1445</p>
+            </div>
+            <p class="active-day-info">Laylatul Qadr</p>
+          </div>
+        </div>
+        <div class="active-day-container">
+          <div class="active-day">
+            <span class="red-circle-serparator">&#9679;</span>
+            <div class="active-day-date-container">
+              <p class="active-day-date-english">April 10th, 2024</p>
+              <p class="active-day-date-arabic Shawwal">Shawwal 1st, 1445</p>
+            </div>
+            <p class="active-day-info">Eid-ul Fitr</p>
+          </div>
+        </div>
+        <div class="note">
+          <span class="purple-circle-serparator">&#9679;</span> The Prophet
+          (peace be upon him) said, “Whoever fasts Ramadan and then follows it
+          with six [days] from Shawwal, it's as if they have fasted a year.”
+          [Muslim]
+        </div>
+        <div class="note note-top-right">
+          <span class="arabic-date"
+            >(لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ)</span
+          >
+          <br />“The Night of Decree is better than a thousand months”
+          <br />(Quran, as translated: 97:3)
+        </div>
+      </div>
+    </div>
+
+    <!-- Mujahadatul Nafs -->
+    <div class="month-group" id="monthGroupMay">
+      <div class="slide" id="slide6">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Mujahadatul-Nafs/Mujahadatul-Nafs-arabic-title.png"
+                  alt="Mujahadatul-Nafs"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Mujahadatul-Nafs/Mujahadatul-Nafs-english-title.png"
+                  alt="Mujahadatul-Nafs"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Mujahadatul-Nafs/Mujahadatul-Nafs-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  And as for those who were in awe of standing before their Lord
+                  and restrained themselves from ˹evil˺ desires, Paradise will
+                  certainly be ˹their˺ home.
+                </p>
+                <p class="quran-translation">
+                  (Quran, as translated: 79:40-41)
+                </p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Badshahi Mosque, Pakistan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">May</h2>
+        <h3 class="arabic-calendar">
+          <span class="Shawwal"
+            >1445 Shawwal <span class="arabic-date">(شَوَّال)</span></span
+          >
+          -
+          <span class="Dhul-Qadah"
+            >1445 Dhul-Qadah
+            <span class="arabic-date">(ذُو ٱلْقَعْدَة)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Shawwal">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Dhul-Qadah">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Dhul-Qadah">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Dhul-Qadah">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">31</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">23</span>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <div class="note note-top-right">
+          The Prophet (peace and blessings of Allah be upon him) said: “The year
+          is of twelve months, out of which four months are sacred: Three are in
+          succession Dhul-Qa' da, Dhul-Hijja and Muharram, and (the fourth is)
+          Rajab of (the tribe of) Mudar which comes between Jumadi-ath-Thaniyah
+          and Sha ban." [Bukhari]
+        </div>
+      </div>
+    </div>
+
+    <!-- Sacrifice -->
+    <div class="month-group" id="monthGroupJune">
+      <div class="slide" id="slide7">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Sacrifice/Sacrifice-arabic-title.png"
+                  alt="Sacrifice"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Sacrifice/Sacrifice-english-title.png"
+                  alt="Sacrifice"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Sacrifice/Sacrifice-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  You shall not attain righteousness until you spend out of what
+                  you love (in the way of Allah).
+                </p>
+                <p class="quran-translation">(Quran, as translated: 3:92)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Great Mosque of Xi'an, China</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">June</h2>
+        <h3 class="arabic-calendar">
+          <span class="Dhul-Qadah"
+            >1445 Dhul-Qadah
+            <span class="arabic-date">(ذُو ٱلْقَعْدَة)</span></span
+          >
+          -
+          <span class="Dhul-Hijjah"
+            >1445 Dhul-Hijjah
+            <span class="arabic-date">(ذُو ٱلْحِجَّة)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calenda Dhul-Qadahr">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Qadah">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="red-circle-serparator">&#9679;</span>
+              <p class="islamic-event">Hajj Begins</p>
+              <span class="arabic-calendar Dhul-Hijjah">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="red-circle-serparator"
+                >&#9679;
+                <span class="purple-circle-serparator">&#9679;</span></span
+              >
+              <span class="purple-circle-serparator-desktop">&#9679;</span>
+              <p class="islamic-event">Day of Arafah</p>
+              <span class="arabic-calendar Dhul-Hijjah">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="red-circle-serparator">&#9679;</span>
+              <p class="islamic-event">Eid-al Adha</p>
+              <span class="arabic-calendar Dhul-Hijjah">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Dhul-Hijjah">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Dhul-Hijjah">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Dhul-Hijjah">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">24</span>
+            </div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note desktop">
+              <span class="purple-circle-serparator-note">&#9679;</span>
+              The Prophet (peace be upon him) said: “Fasting on the day of
+              Arafah is an expiation for the preceding year and the following
+              year.” [Muslim]
+              <br />
+              (Hajj, Day of Arafah and Eid-al Adha may change based on moon
+              sighting)
+            </div>
+          </div>
+          <div class="active-day-container">
+            <div class="active-day">
+              <span class="red-circle-serparator">&#9679;</span>
+              <div class="active-day-date-container">
+                <p class="active-day-date-english">June 14th, 2024</p>
+                <p class="active-day-date-arabic Dhul-Hijjah">
+                  Dhul-Hijjah 8th, 1445
+                </p>
+              </div>
+              <p class="active-day-info">Hajj Begins</p>
+            </div>
+          </div>
+          <div class="active-day-container">
+            <div class="active-day">
+              <span class="red-circle-serparator">&#9679;</span>
+              <div class="active-day-date-container">
+                <p class="active-day-date-english">June 15th, 2024</p>
+                <p class="active-day-date-arabic Dhul-Hijjah">
+                  Dhul-Hijjah 9th, 1445
+                </p>
+              </div>
+              <p class="active-day-info">Day of Arafah</p>
+            </div>
+          </div>
+          <div class="active-day-container">
+            <div class="active-day">
+              <span class="red-circle-serparator">&#9679;</span>
+              <div class="active-day-date-container">
+                <p class="active-day-date-english">June 16th, 2024</p>
+                <p class="active-day-date-arabic Dhul-Hijjah">
+                  Dhul-Hijjah 10th, 1445
+                </p>
+              </div>
+              <p class="active-day-info">Eid-al Adha</p>
+            </div>
+          </div>
+          <div class="note">
+            <span class="purple-circle-serparator">&#9679;</span>
+            The Prophet (peace be upon him) said: “Fasting on the day of Arafah
+            is an expiation for the preceding year and the following year.”
+            [Muslim] <br />
+            (Hajj, Day of Arafah and Eid-al Adha may change based on moon
+            sighting)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Izza -->
+    <div class="month-group" id="monthGroupJuly">
+      <div class="slide" id="slide8">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Izza/Izza-arabic-title.png"
+                  alt="Izza"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Izza/Izza-english-title.png"
+                  alt="Izza"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Izza/Izza-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  Whoever seeks izza, then ˹let them know that˺ all izza belongs
+                  to Allah…
+                </p>
+                <p class="quran-translation">(Quran, as translated: 35:10)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Khast Imam, Uzbekistan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">July</h2>
+        <h3 class="arabic-calendar">
+          <span class="Dhul-Hijjah"
+            >1445 Dhul-Hijjah
+            <span class="arabic-date">(ذُو ٱلْحِجَّة)</span></span
+          >
+          -
+          <span class="Muharram"
+            >1446 Muharram <span class="arabic-date">(ٱلْمُحَرَّم)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div></div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Dhul-Hijjah">30</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="red-circle-serparator">&#9679;</span>
+              <p class="islamic-event">Islamic New Year</p>
+              <span class="arabic-calendar Muharram">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="red-circle-serparator"
+                >&#9679;
+                <span class="purple-circle-serparator">&#9679;</span></span
+              >
+              <span class="purple-circle-serparator-desktop">&#9679;</span>
+              <p class="islamic-event">Day of Ashura</p>
+              <span class="arabic-calendar Muharram">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Muharram">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Muharram">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Muharram">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">24</span>
+            </div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note desktop">
+              <span class="purple-circle-serparator-note">&#9679;</span>
+              The Prophet (peace be upon him) was asked about observing As-Saum
+              (the fast) on the 10th day of Muharram, and he replied, “It is an
+              expiation for the sins of the preceding year.” [Muslim]
+            </div>
+          </div>
+        </div>
+        <div class="active-day-container">
+          <div class="active-day">
+            <span class="red-circle-serparator">&#9679;</span>
+            <div class="active-day-date-container">
+              <p class="active-day-date-english">July 7th, 2024</p>
+              <p class="active-day-date-arabic">Muharram 1st, 1446</p>
+            </div>
+            <p class="active-day-info">Islamic New Year</p>
+          </div>
+        </div>
+        <div class="active-day-container">
+          <div class="active-day">
+            <span class="red-circle-serparator">&#9679;</span>
+            <div class="active-day-date-container">
+              <p class="active-day-date-english">July 16th, 2024</p>
+              <p class="active-day-date-arabic">Muharram 10th, 1446</p>
+            </div>
+            <p class="active-day-info">Day of Ashura</p>
+          </div>
+        </div>
+        <div class="note">
+          <span class="purple-circle-serparator-note">&#9679;</span>The Prophet
+          (peace be upon him) was asked about observing As-Saum (the fast) on
+          the 10th day of Muharram, and he replied, “It is an expiation for the
+          sins of the preceding year.” [Muslim]
+        </div>
+      </div>
+    </div>
+
+    <!-- Justice -->
+    <div class="month-group" id="monthGroupAugust">
+      <div class="slide" id="slide9">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Justice/Justice-arabic-title.png"
+                  alt="Justice"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Justice/Justice-english-title.png"
+                  alt="Justice"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Justice/Justice-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  O you who believe! Stand firmly for justice, as witnesses to
+                  God
+                </p>
+                <p class="quran-translation">(Quran, as translated: 4:135)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Sultan Ahmed (Blue Mosque), Turkey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">August</h2>
+        <h3 class="arabic-calendar">
+          <span class="Muharram"
+            >1446 Muharram <span class="arabic-date">(ٱلْمُحَرَّم)</span></span
+          >
+          -
+          <span class="Safar"
+            >1446 Safar <span class="arabic-date">(صَفَر)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note note-top-left">
+              The Prophet (peace be upon him) was asked about observing As-Saum
+              (the fast) on the 10th day of Muharram, and he replied, “It is an
+              expiation for the sins of the preceding year.” [Muslim]
+            </div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Muharram">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Safar">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Safar">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Safar">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">31</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">27</span>
+            </div>
+          </div>
+        </div>
+        <div class="note">
+          The Prophet (peace be upon him) was asked about observing As-Saum (the
+          fast) on the 10th day of Muharram, and he replied, “It is an expiation
+          for the sins of the preceding year.” [Muslim]
+        </div>
+      </div>
+    </div>
+
+    <!-- The Truth -->
+    <div class="month-group" id="monthGroupSeptember">
+      <div class="slide" id="slide10">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/The-Truth/The-Truth-arabic-title.png"
+                  alt="The-Truth"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/The-Truth/The-Truth-english-title.png"
+                  alt="The-Truth"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/The-Truth/The-Truth-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  That is because Allah ˹alone˺ is the Truth, He ˹alone˺
+                  giveslife to the dead, and He ˹alone˺ is Most Capable of
+                  everything.
+                </p>
+                <p class="quran-translation">(Quran, as translated: 22:6)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Malacca Straits Mosque, Malaysia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">September</h2>
+        <h3 class="arabic-calendar">
+          <span class="Safar"
+            >1446 Safar <span class="arabic-date">(صَفَر)</span></span
+          >
+          -
+          <span class="Rabi-Al-Awwal"
+            >1446 Rabi al-Awwal
+            <span class="arabic-date">(رَبِيع ٱلْأَوَّل)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Safar">30</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="red-circle-serparator">&#9679;</span>
+              <p class="islamic-event">Day the Prophet (SAW) was born</p>
+              <span class="arabic-calendar Rabi-Al-Awwal">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Rabi-Al-Awwal">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Rabi-Al-Awwal">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Rabi-Al-Awwal">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">27</span>
+            </div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note desktop">
+              <p class="bold">
+                Rabi al-Awwal signifies 3 important dates in history:
+              </p>
+              <p class="left-align">
+                1. The birth of the Prophet Muhammad (peace be upon him). <br />
+                2. The Hijrah of the Prophet (peace be upon him), from Makkah to
+                Madinah. <br />
+                3. The death of the Prophet (peace be upon him) - at 63 years
+                old.
+              </p>
+            </div>
+          </div>
+          <div class="active-day-container">
+            <div class="active-day">
+              <span class="red-circle-serparator">&#9679;</span>
+              <div class="active-day-date-container">
+                <p class="active-day-date-english">Sept 15th, 2024</p>
+                <p class="active-day-date-arabic">Rabi al-Awwal 15th, 1446</p>
+              </div>
+              <p class="active-day-info right-align">
+                Day the Prophet (SAW) was born
+              </p>
+            </div>
+          </div>
+          <div class="note">
+            <p class="bold">
+              Rabi al-Awwal signifies 3 important dates in history:
+            </p>
+            <p class="left-align">
+              1. The birth of the Prophet Muhammad (peace be upon him). <br />
+              2. The Hijrah of the Prophet (peace be upon him), from Makkah to
+              Madinah. <br />
+              3. The death of the Prophet (peace be upon him) - at 63 years old.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rahma -->
+    <div class="month-group" id="monthGroupOctober">
+      <div class="slide" id="slide11">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Rahma/Rahma-arabic-title.png"
+                  alt="Rahma"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Rahma/Rahma-english-title.png"
+                  alt="Rahma"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Rahma/Rahma-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  Say, ˹O Prophet, that Allah says,˺ “O My servants who have
+                  exceeded the limits against their souls! Do not lose hope in
+                  Allah's mercy, for Allah certainly forgives all sins. He is
+                  indeed the All-Forgiving, Most Merciful.
+                </p>
+                <p class="quran-translation">(Quran, as translated: 39:53)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Ali Jim'ale Mosque, Somalia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">October</h2>
+        <h3 class="arabic-calendar">
+          <span class="Rabi-Al-Awwal">
+            1446 Rabi al-Awwal
+            <span class="arabic-date">(رَبِيع ٱلْأَوَّل)</span>
+          </span>
+          -
+          <span class="Rabi-Al-Thani"
+            >1446 Rabi al-Thani
+            <span class="arabic-date">(رَبِيع ٱلثَّانِي)</span></span
+          >
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div></div>
+            <div></div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Awwal">30</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Rabi-Al-Thani">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Rabi-Al-Thani">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Rabi-Al-Thani">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">31</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">28</span>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="note note-top-right">
+          <br />
+          The Prophet (peace be upon him) said: "There are two blessings which
+          many people lose: (They are) health and free time for doing good.”
+          [Bukhari]
+        </div>
+      </div>
+    </div>
+
+    <!-- Rabbaniyah -->
+    <div class="month-group" id="monthGroupNovember">
+      <div class="slide" id="slide12">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Rabbaniyah/Rabbaniyah-arabic-title.png"
+                  alt="Rabbaniyah"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Rabbaniyah/Rabbaniyah-english-title.png"
+                  alt="Rabbaniyah"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Rabbaniyah/Rabbaniyah-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  And there are those who would dedicate their lives to Allah's
+                  pleasure. And Allah is Ever Gracious to ˹His˺ servants.
+                </p>
+                <p class="quran-translation">(Quran, as translated: 2:207)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Al Mustafa Mosque, Egypt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">November</h2>
+        <h3 class="arabic-calendar">
+          <span class="Rabi-Al-Thani">
+            1446 Rabi al-Thani
+            <span class="arabic-date">(رَبِيع ٱلثَّانِي)</span>
+          </span>
+          -
+          <span class="Jumadi-Al-Awwal">
+            1446 Jumadi al-Awwal
+            <span class="arabic-date">(جُمَادَىٰ ٱلْأُولَىٰ)</span>
+          </span>
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note note-top-left">
+              The Prophet (peace be upon him) said: "Whoever says in the morning
+              and in the evening:(سبحان الله وبحمده) 'Subhan Allah wa bi hamdihi
+              (Glory and praise be to Allah)' one hundred times, no one will
+              come on the Day of Resurrection with anything better than what he
+              has done, except one who said something like what he said, or more
+              than that..” [Muslim]
+            </div>
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Rabi-Al-Thani">30</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Jumada-Al-Awwal">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Jumada-Al-Awwal">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Jumada-Al-Awwal">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">28</span>
+            </div>
+          </div>
+        </div>
+        <div class="note">
+          The Prophet (peace be upon him) said: "Whoever says in the morning and
+          in the evening:(سبحان الله وبحمده) 'Subhan Allah wa bi hamdihi (Glory
+          and praise be to Allah)' one hundred times, no one will come on the
+          Day of Resurrection with anything better than what he has done, except
+          one who said something like what he said, or more than that..”
+          [Muslim]
+        </div>
+      </div>
+    </div>
+
+    <!-- Ummah -->
+    <div class="month-group" id="monthGroupDecember">
+      <div class="slide" id="slide13">
+        <div class="container">
+          <div class="left-side">
+            <hr />
+            <div class="left-side-content">
+              <div class="left-side-content-header">
+                <img
+                  src="./assets/Ummah/Ummah-arabic-title.png"
+                  alt="Ummah"
+                  class="left-side-content-header-img-one"
+                />
+                <img
+                  src="./assets/Ummah/Ummah-english-title.png"
+                  alt="Ummah"
+                  class="left-side-content-header-img-two"
+                />
+              </div>
+              <img
+                src="./assets/Ummah/Ummah-text.png"
+                alt=""
+                class="arabic-text"
+              />
+              <div>
+                <p class="english-text">
+                  Do not lose hope in Allah's mercy, for Allah certainly
+                  forgives all sins. He is indeed the All-Forgiving, Most
+                  Merciful.
+                </p>
+                <p class="quran-translation">(Quran, as translated: 2:207)</p>
+              </div>
+            </div>
+            <hr />
+            <img
+              src="./assets/mac-logo.png"
+              alt="mac Logo"
+              class="mac-bottom"
+            />
+          </div>
+          <div class="right-side">
+            <div class="location">
+              <p>Hassan II Mosque, Morocco</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <hr />
+        <p class="year">2024</p>
+        <h2 class="month">December</h2>
+        <h3 class="arabic-calendar">
+          <span class="Jumada-Al-Awwal">
+            1446 Jumadi al-Awwal
+            <span class="arabic-date">(جُمَادَىٰ ٱلْأُولَىٰ)</span>
+          </span>
+          -
+          <span class="Jumada-Al-Thani">
+            1446 Jumadi al-Thani
+            <span class="arabic-date">(جُمَادَىٰ ٱلثَّانِيَة)</span>
+          </span>
+        </h3>
+        <div class="grid-calendar">
+          <!-- Headers -->
+          <div class="day-header-container">
+            <div class="day-header">Su</div>
+            <div class="day-header">Mo</div>
+            <div class="day-header">Tu</div>
+            <div class="day-header">We</div>
+            <div class="day-header">Th</div>
+            <div class="day-header">Fr</div>
+            <div class="day-header">Sa</div>
+          </div>
+          <!-- Days -->
+          <div class="day-count">
+            <div>
+              <span class="english-calendar">1</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Awwal">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">2</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">1</span>
+            </div>
+            <div>
+              <span class="english-calendar">3</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">2</span>
+            </div>
+            <div>
+              <span class="english-calendar">4</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">3</span>
+            </div>
+            <div>
+              <span class="english-calendar">5</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">4</span>
+            </div>
+            <div>
+              <span class="english-calendar">6</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">5</span>
+            </div>
+            <div>
+              <span class="english-calendar">7</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">6</span>
+            </div>
+            <div>
+              <span class="english-calendar">8</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">7</span>
+            </div>
+            <div>
+              <span class="english-calendar">9</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">8</span>
+            </div>
+            <div>
+              <span class="english-calendar">10</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">9</span>
+            </div>
+            <div>
+              <span class="english-calendar">11</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">10</span>
+            </div>
+            <div>
+              <span class="english-calendar">12</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">11</span>
+            </div>
+            <div>
+              <span class="english-calendar">13</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">12</span>
+            </div>
+            <div>
+              <span class="english-calendar">14</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Jumada-Al-Thani">13</span>
+            </div>
+            <div>
+              <span class="english-calendar">15</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Jumada-Al-Thani">14</span>
+            </div>
+            <div>
+              <span class="english-calendar">16</span>
+              <span class="asterisk-serparator"></span>
+              <span class="arabic-calendar Jumada-Al-Thani">15</span>
+            </div>
+            <div>
+              <span class="english-calendar">17</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">16</span>
+            </div>
+            <div>
+              <span class="english-calendar">18</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">17</span>
+            </div>
+            <div>
+              <span class="english-calendar">19</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">18</span>
+            </div>
+            <div>
+              <span class="english-calendar">20</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">19</span>
+            </div>
+            <div>
+              <span class="english-calendar">21</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">20</span>
+            </div>
+            <div>
+              <span class="english-calendar">22</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">21</span>
+            </div>
+            <div>
+              <span class="english-calendar">23</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">22</span>
+            </div>
+            <div>
+              <span class="english-calendar">24</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">23</span>
+            </div>
+            <div>
+              <span class="english-calendar">25</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">24</span>
+            </div>
+            <div>
+              <span class="english-calendar">26</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">25</span>
+            </div>
+            <div>
+              <span class="english-calendar">27</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">26</span>
+            </div>
+            <div>
+              <span class="english-calendar">28</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">27</span>
+            </div>
+            <div>
+              <span class="english-calendar">29</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">28</span>
+            </div>
+            <div>
+              <span class="english-calendar">30</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">29</span>
+            </div>
+            <div>
+              <span class="english-calendar">31</span>
+              <span class="circle-serparator">&#9679;</span>
+              <span class="arabic-calendar Jumada-Al-Thani">30</span>
+            </div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="final-divs"></div>
+            <div class="note desktop">
+              The Prophet (peace be upon him) said: “Take advantage of five
+              matters before five other matters: your youth, before you become
+              old; your health, before you fall sick; your wealth, before you
+              become poor; your free time before you become busy; and your life,
+              before your death.” [Bukhari]
+            </div>
+          </div>
+          <div class="note">
+            The Prophet (peace be upon him) said: “Take advantage of five
+            matters before five other matters: your youth, before you become
+            old; your health, before you fall sick; your wealth, before you
+            become poor; your free time before you become busy; and your life,
+            before your death.” [Bukhari]
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
