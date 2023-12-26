@@ -339,10 +339,7 @@ html {
 }
 
 .important-dates-container {
-  background: url(../assets/Muraqabah/Dome-Of-The-Rock.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
+  background-color: rgba(196, 209, 220, 0.7);
   max-width: 1140px;
   margin: 10px auto;
   display: flex;
@@ -833,6 +830,10 @@ html {
 @media (min-width: 769px) {
   /* Intro */
 
+  .intro-container {
+    min-height: 40vh;
+  }
+
   .intro-background {
     width: 70%;
   }
@@ -856,6 +857,10 @@ html {
   .Calendar-Btn {
     padding: 10px 20px;
     margin-bottom: 0;
+  }
+
+  .Intro-English-Title {
+    font-size: 2rem;
   }
 
   .Intro-Text {
@@ -1219,5 +1224,12 @@ html {
     min-height: unset !important;
     min-height: 50vh !important;
     max-width: unset !important;
+  }
+
+  .important-dates-container {
+    background: url(../assets/Muraqabah/Dome-Of-The-Rock.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
   }
 }
