@@ -9,8 +9,6 @@ body,
 html {
   width: 100%;
   height: 100%;
-  /* background: url("../assets/background-pattern.webp") repeat !important; */
-  /* background-color: #e0e0e0; */
   background-color: #313131;
 }
 
@@ -188,13 +186,6 @@ html {
 }
 
 /* Right side Background image */
-/* #slide1 {
-  background: url("../assets/Initial-mosque.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-} */
-
 #slide2 .container .right-side {
   background: url("../assets/Iman/Ka'bah-Mecca.jpg");
 }
@@ -365,7 +356,6 @@ html {
 }
 
 .important-dates-content > p {
-  /* border: 3px solid black; */
   background-color: #fdc361;
   color: #252b3b;
   border-radius: 10px;
@@ -857,11 +847,7 @@ html {
 
   .intro-background > img {
     display: block;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
+    border-radius: 10px;
     width: 100%;
     height: 90%;
     align-self: center;
@@ -964,10 +950,6 @@ html {
     width: 50%;
   }
 
-  /* .left-side-content-header-img-two {
-    width: 80%;
-  } */
-
   #monthGroupMarch .arabic-text,
   #monthGroupJune .arabic-text {
     width: 60%;
@@ -1044,10 +1026,6 @@ html {
   .note-top-left {
     display: block;
   }
-
-  /* .day-count > div > .islamic-event {
-    color: #567ed4;
-  } */
 
   #monthGroupJanuary .desktop {
     grid-column: span 3;
@@ -1241,11 +1219,4 @@ html {
     min-height: 40vh !important;
     max-width: unset !important;
   }
-
-  /* .important-dates-container {
-    background: url(../assets/Muraqabah/Dome-Of-The-Rock.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-  } */
 }
